@@ -13,7 +13,7 @@ FLAGS = -g -O0 -Wall -Wextra -Wpedantic -Wno-strict-aliasing -Wstrict-overflow -
 #libs are frameworks that I can't change have their warnings suppressed by
 #using -isystem and -iframework:
 OPENGL = -framework OpenGL -framework GLUT -framework GLKit
-SDL = -F/Users/jgrey/Library/Frameworks -framework SDL2
+#SDL = -F/Users/jgrey/Library/Frameworks -framework SDL2
 BOOST = -isystem/usr/local/Cellar/boost/1.60.0_1 -L/usr/local/Cellar/boost/1.60.0_1/lib -lboost_system
 OGRE = -iframework./Frameworks -framework Ogre
 
