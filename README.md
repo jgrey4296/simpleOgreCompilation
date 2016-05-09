@@ -5,6 +5,6 @@ There is a single source file `main.cpp`, which will create a scene with the rot
 This was built using *Ogre 1.9*
 
 ## Getting to work on other systems:
-1) Create a `Frameworks` directory at the top level, beside the `makefile`, and put the Ogre frameworks in there, and update `configs/plugins.cfg` to have the full path to there
-2) Update the location of `${BOOST}` in the `makefile`
-3) Update the *resource locations* specified in `main.cpp`:29-33.
+1) Create a `Frameworks` directory at the top level, beside the `makefile`, and put the Ogre frameworks in there, and update `configs/plugins.cfg` to have the full path to there  
+2) Update the location of `${BOOST}` in the `makefile`  
+3) Update the *resource locations* specified in `main.cpp`:29-33  
