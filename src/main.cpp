@@ -14,10 +14,9 @@ using namespace std;
 int main(int argc, char* argv[]){
     cout << "Test Ogre Program blaha" << endl;
 
-    Ogre::Root *mRoot = new Ogre::Root("","","test.log");
-
-    mRoot->loadPlugin("/Users/jgrey/github/TEST/ogreTest/Frameworks/RenderSystem_GL.framework");
-
+    //Relative to where its executed from, not binary location
+    Ogre::Root *mRoot = new Ogre::Root("configs/plugins.cfg","configs/config.cfg","logs/main.log");
+    
     Ogre::RenderSystem* rs = mRoot->getRenderSystemByName("OpenGL Rendering Subsystem");
     rs->setConfigOption("Full Screen", "No");
     rs->setConfigOption("VSync", "No");
